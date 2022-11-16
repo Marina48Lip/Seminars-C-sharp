@@ -8,6 +8,9 @@ for (int i = 0; i < array.Length; i++)
     Console.Write(array[i] + " ");
 } 
 int sumOdd = 0;
+
+void SummaArray(int[] array)
+{
 for (int i = 0; i < array.Length; i++)
 {
     if (i % 2 != 0)
@@ -15,5 +18,7 @@ for (int i = 0; i < array.Length; i++)
         sumOdd = sumOdd + array[i];
     }
 }
+}
+SummaArray(array);
 Console.WriteLine();
 Console.WriteLine($"Сумма элементов,стоящих на нечетных позициях равна {sumOdd}");
