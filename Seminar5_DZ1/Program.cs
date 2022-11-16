@@ -9,6 +9,9 @@ for (int i = 0; i < array.Length; i++)
     Console.Write(array[i] + " ");
 } 
 int count = 0;
+
+void ChetArray(int[] array)
+{
 for (int i = 0; i <array.Length; i++)
 {
    if (array[i] % 2 == 0)
@@ -16,5 +19,7 @@ for (int i = 0; i <array.Length; i++)
         count++;
    }
 }
+}
+ChetArray(array);
 Console.WriteLine(" ");
 Console.WriteLine($"Количество четных чисел в массиве {count}");
